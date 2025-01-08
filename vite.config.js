@@ -1,12 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
-//vite.config.js:
 export default defineConfig({
     plugins: [sveltekit()],
-    base: '/tetris/',
+    base: '/tetris/',  // Ha GitHub Pages-en hosztolod
     build: {
-        outDir: 'docs',
-        emptyOutDir: true
+        outDir: 'docs',  // Kimeneti könyvtár
+        emptyOutDir: true  // Ürítse ki a docs mappát build előtt
     }
-})
+});
