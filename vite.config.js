@@ -1,9 +1,9 @@
+import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import svelte from '@sveltejs/vite-plugin-svelte';
 
 //vite.config.js:
 export default defineConfig({
-    plugins: [svelte()],
+    plugins: [sveltekit()],
     base: '/tetris/',
     build: {
         outDir: 'docs',
